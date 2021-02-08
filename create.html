@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSquad Comics-About</title>
+</head>
+<body style="margin: 0; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div class="header">
+        <img style="width: 100%;" src="img/CodeSquad-Comics-logo.png" alt="CODESQUAD COMICS">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <h1>ADD A NEW COMIC</h1>
+
+    <div class="form">
+        <form action="update.html">
+            <div>
+                <label for="Title">Title: </label>
+                <input name="Title" placeholder="Title" type="text">
+            </div>
+            <div>
+                <label for="Author:">Author: </label>
+                <input name="Author" placeholder="Author" type="text">
+            </div>
+            <div>
+                <label for="Publisher">Publisher: </label>
+                <select name="Publisher" id="publisher">
+                    <option value="" disabled selected>Select Publisher</option>
+                    <option value="BOOM! Box">BOOM! Box</option>
+                    <option value="DC Comics">DC Comics</option>
+                    <option value="Harry N. Abrahms">Harry N. Abrahms</option>
+                    <option value="Icon Book">Icon Book</option>
+                    <option value="Image Comics">Image Comics</option>
+                    <option value="Marvel">Marvel</option>
+                    <option value="Simon & Schuster">Simon & Schuster</option>
+                    <option value="Top Shelf Production">Top Shelf Production</option>
+                    <option value="VIZ Media LLC">VIZ Media LLC</option>
+                </select>
+            </div>
+            <div>
+                <label for="Genre">Genre: </label>
+                <input name="Genre" placeholder="Genre" type="text">
+            </div>
+            <div>
+                <label for="Number of Pages">Number of Pages: </label>
+                <input name="Number of Pages" placeholder="Number of Pages" type="text">
+            </div>
+            <div>
+                <label for="Rating">Rating: </label>
+                <select name="Rating" id="Rating">
+                    <option value="" disabled selected>Select Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <label for="Synopsis">Synopsis: </label>
+                <br>
+                <textarea name="Synopsis" placeholder="Synopsys" id="Synopsis" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Add Entry</button>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <h3>Visit Us</h3>
+            <p>CodeSquad Comics</p>
+            <p>123 Dorchester Avenue</p>
+            <p>Boston, MA 02124</p>
+        </div>
+        <div>
+            <h3>Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+        </div>
+        <div class="footimg">
+            <h3>A Product of</h3>
+            <img style="width: 100%;" src="img/CodeSquad-logo-a.png" alt=""></div>
+    </footer>
+
+</body>
+</html>
