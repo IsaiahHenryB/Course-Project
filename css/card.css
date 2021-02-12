@@ -1,0 +1,35 @@
+ 
+.card{
+    margin: auto;
+    border: 5px solid #FCCF14;
+    border-radius: 25px;
+    width: fit-content;
+    overflow: hidden;
+}
+.image{
+    background-color:  #063C5E;
+    padding: 30px;
+    text-align: center;
+    color: #FCCF14;
+}
+.comic{
+    width: 400px;
+    height: auto;
+    border: 4px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+.desc{
+    max-width: 400px;
+    padding:40px;
+    border-top: 5px solid #FCCF14;
+}
+
+.holder{
+    padding: 25px;
+}
+
+.title{
+    text-decoration: underline;
+    color: #063C5E;
+}
