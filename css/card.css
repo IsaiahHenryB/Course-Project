@@ -20,9 +20,12 @@
 }
 
 .desc{
-    max-width: 400px;
+    box-sizing: border-box;
+    width: 480px;
     padding:40px;
     border-top: 5px solid #FCCF14;
+    background-color: #FFFFFF;
+    overflow: hidden;
 }
 
 .holder{

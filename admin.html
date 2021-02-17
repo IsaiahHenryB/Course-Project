@@ -18,17 +18,23 @@
         </div>
     </div>
     
+    <div class="content-box">
 
     <h1>ADMIN PAGE</h1>
 
     <div class="admintab">
-        <table>
-            <a href="create.html"><button>ADD NEW COMIC</button></a>
+        <div class="add-button"><a href="create.html"><button>ADD NEW COMIC</button></a></div>
+        <table class="book-table">
+            
+            <thead>
             <tr>
-                <th><h4>COMIC TITLE</h4></th>
-                <th><h4>EDIT</h4></th>
-                <th><h4>DELETE</h4></th>
+                <th><p>COMIC TITLE</p></th>
+                <th><p>EDIT</p></th>
+                <th><p>DELETE</p></th>
             </tr>
+            </thead>
+
+            <tbody>
             <tr>
                 <td>Batman: The Dark Knight Returns</td>
                 <td><button>EDIT</button></td>
@@ -89,9 +95,10 @@
                 <td><button>EDIT</button></td>
                 <td><button>DELETE</button></td>
             </tr>
-
+        </tbody>
         </table>
     </div>
+</div>
     <footer>
         <div>
             <h3>Visit Us</h3>
