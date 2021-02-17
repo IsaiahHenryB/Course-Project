@@ -77,7 +77,10 @@ footer img{
     color: #FFFFFF;
 }
 
-footer ul, footer ul li{
+footer ul,
+footer ul li,
+ul,
+ul li{
     list-style-type: none;
 }
 
