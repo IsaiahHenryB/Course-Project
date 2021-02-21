@@ -18,20 +18,63 @@
         </div>
     </div>
     
+    <div class="content-box">
 
-    <h1>Admin Page</h1>
+    <h1>Update Comic</h1>
 
-    <div class="form">
-        <form method="POST" action="">
-            <input type="text" value="title value stored in database">
-            <input type="text" value="author value stored in database">
-            <input type="text" value="publisher value stored in database">
-            <input type="text" value="genre data stored in database">
-            <input type="text" value="255">
-            <input type="text" value="5">
-            <input type="text" value="synopsis value stored in database">
+    <div class="form-container">
+        <form action="update.html">
+            <div>
+                <label for="Title">Title: </label>
+                <input name="Title" placeholder="Title" type="text">
+            </div>
+            <div>
+                <label for="Author:">Author: </label>
+                <input name="Author" placeholder="Author" type="text">
+            </div>
+            <div>
+                <label for="Publisher">Publisher: </label>
+                <select name="Publisher" id="publisher">
+                    <option value="" disabled selected>Select Publisher</option>
+                    <option value="BOOM! Box">BOOM! Box</option>
+                    <option value="DC Comics">DC Comics</option>
+                    <option value="Harry N. Abrahms">Harry N. Abrahms</option>
+                    <option value="Icon Book">Icon Book</option>
+                    <option value="Image Comics">Image Comics</option>
+                    <option value="Marvel">Marvel</option>
+                    <option value="Simon & Schuster">Simon & Schuster</option>
+                    <option value="Top Shelf Production">Top Shelf Production</option>
+                    <option value="VIZ Media LLC">VIZ Media LLC</option>
+                </select>
+            </div>
+            <div>
+                <label for="Genre">Genre: </label>
+                <input name="Genre" placeholder="Genre" type="text">
+            </div>
+            <div>
+                <label for="Number of Pages">Number of Pages: </label>
+                <input name="Number of Pages" placeholder="Number of Pages" type="text">
+            </div>
+            <div>
+                <label for="Rating">Rating: </label>
+                <select name="Rating" id="Rating">
+                    <option value="" disabled selected>Select Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div>
+                <label for="Synopsis">Synopsis: </label>
+                <textarea name="Synopsis" placeholder="Synopsys" id="Synopsis" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit">Add Entry</button>
         </form>
     </div>
+</div>
+
     <footer>
         <div>
             <h3>Visit Us</h3>
@@ -57,7 +100,7 @@
         </div>
         <div class="footimg">
             <h3>A Product of</h3>
-            <img src="img/CodeSquad-logo-a.png" alt=""></div>
+            <img src="img/CodeSquad-logo-b.png" alt=""></div>
     </footer>
 
 </body>
