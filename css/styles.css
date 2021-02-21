@@ -190,7 +190,7 @@ a button{
     margin: 12px auto;
     background-color: #FCCF14;
 }
-tbody button{
+tbody tr td button{
     width: auto;
     border: 2px solid #F3F3F3;
     color: #FFFFFF;
@@ -199,7 +199,7 @@ tbody button{
     margin: 12px auto;
     background-color: #063C5E;
 }
-tbody tr td:nth-of-type(3) button{
+tr td:nth-of-type(3) button{
     width: auto;
     border: 2px solid #063C5E;
     color: #063C5E;
@@ -207,7 +207,6 @@ tbody tr td:nth-of-type(3) button{
     padding: 2px;
     margin: 12px auto;
     background-color: #FCCF14;
-
 }
 tr:nth-child(even){
     background-color: #d4d4d4;
@@ -228,3 +227,42 @@ footer div{
     vertical-align: top;
 }
 
+
+ 
+.card{
+    margin: auto;
+    border: 5px solid #FCCF14;
+    border-radius: 25px;
+    width: fit-content;
+    overflow: hidden;
+}
+.image{
+    background-color:  #063C5E;
+    padding: 30px;
+    text-align: center;
+    color: #FCCF14;
+}
+.comic{
+    width: 400px;
+    height: auto;
+    border: 4px solid #FFFFFF;
+    border-radius: 25px;
+}
+
+.card-desc{
+    box-sizing: border-box;
+    width: 480px;
+    padding:40px;
+    border-top: 5px solid #FCCF14;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.holder{
+    padding: 25px;
+}
+
+.title{
+    text-decoration: underline;
+    color: #063C5E;
+}
