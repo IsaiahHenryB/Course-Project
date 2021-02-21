@@ -48,7 +48,7 @@ body {
     text-align: center;
     color: #063C5E;
 }
-.content-box button{
+div button{
     width: auto;
     border: 2px solid #063C5E;
     color: #063C5E;
