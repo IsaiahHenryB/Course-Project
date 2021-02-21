@@ -170,7 +170,11 @@ textarea{
     text-align: center;
     margin: 0;
 }
-
+.book-table tr,
+.book-table td,
+.book-table th{
+    border: 2px solid #063C5E;
+}
 .book-table th{
     background-color:#d4d4d4;
     text-align: center;
