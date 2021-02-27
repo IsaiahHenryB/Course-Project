@@ -24,6 +24,18 @@ body {
     background-image: linear-gradient(#A5DDDD, #277F7F);
 }
 
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+}
 .header ul li{
     display: inline-block;
     padding: 0 20px 0 20px;
@@ -41,13 +53,38 @@ body {
     border: solid 2px #063C5E;
     padding: 10px;
     background-color: #ffffff;
+    justify-content: center;
+    text-align: center;
 }
+.columns{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 
+}
+.books{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.book{
+    width: 300px;
+    text-align: center;
+    margin: 20px 0px;
+}
+.book a{
+    color: #063C5E;
+}
+.book a:hover{
+    color: #277F7F;
+    font-weight: bold;
+}
 .content-box h1,
 .content-box h2{
     text-align: center;
     color: #063C5E;
 }
+
 div button{
     width: auto;
     border: 2px solid #063C5E;
@@ -61,18 +98,6 @@ div button{
     width: 300px;
 }
 
-footer{
-    padding: 20px;
-    background-color: #063C5E;
-    border-top: 4px solid #FCCF14;
-    color: #FFFFFF;
-    position: bottom;
-}
-
-footer img{
-     width: 150px;
-}
-
 .header a{
     color: #FFFFFF;
 }
@@ -84,12 +109,7 @@ ul li{
     list-style-type: none;
 }
 
-footer a{
-    color: #FFFFFF;
-}
-footer a:hover{
-    color: #FCCF14;
-}
+
 
 .form-container{
     background-color: inherit;
@@ -215,6 +235,20 @@ tr td:nth-of-type(3) button{
 tr:nth-child(even){
     background-color: #d4d4d4;
 }
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #063C5E;
+    border-top: 4px solid #FCCF14;
+    color: #FFFFFF;
+    position: bottom;
+}
+
+footer img{
+     width: 150px;
+}
 
 footer{
     min-height: 300px;
@@ -226,13 +260,17 @@ footer h3{
 }
 
 footer div{
-    display: inline-block;
-    width: 24%;
     vertical-align: top;
 }
 
+footer a{
+    color: #FFFFFF;
+}
 
- 
+footer a:hover{
+    color: #FCCF14;
+}
+
 .card{
     margin: auto;
     border: 5px solid #FCCF14;
