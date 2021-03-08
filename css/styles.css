@@ -338,3 +338,15 @@ footer i:hover{
     text-decoration: underline;
     color: var(--blue);
 }
+
+@media screen and (max-width: 1024){
+    body{
+        background-color: #FCCF14;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        background-color: black;
+    }
+}
