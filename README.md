@@ -39,3 +39,9 @@ I was able to successfully add the Bars icon to each page and make them appear a
 I was also able to get the footer to look as close as I could get it to the mockups.
 
 Though it took some time and some choice words, I was able to add breakpoints to the Comic Card Page along with every page that contained a form.
+##homework7 (session 2)
+I removed the background colors form the breakpoints.
+
+I was also able to resolve issue with the horizontal scrolling.
+
+Also fixed some issues with how the footer would show up.
