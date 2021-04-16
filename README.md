@@ -45,3 +45,8 @@ I removed the background colors form the breakpoints.
 I was also able to resolve issue with the horizontal scrolling.
 
 Also fixed some issues with how the footer would show up.
+
+## Homework8
+I was able to use JS to make the ul show up for the navbar.
+
+I added an absolute positioning to the hamburger button to prevent it from shifting when clicked.

@@ -49,6 +49,10 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
+/* show nav */
+.nav ul.show{
+    display: block;
+}
 .header{
     display: flex;
     flex-flow: row wrap;
@@ -393,6 +397,9 @@ p,a,input,textarea{
         display: flex;
         align-items: center;
         margin: 0 20px;
+        position: absolute;
+        right: 0;
+        top: 45px;
     }
     .dropdown i:hover{
         color: var(--yellow);
