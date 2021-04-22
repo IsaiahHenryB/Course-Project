@@ -212,7 +212,9 @@ textarea{
     max-height: 1000px;
     min-height: 100px;
 }
-
+.book img{
+    width: 200px;
+}
 .book-table{
     border: 1px solid var(--black);
     border-collapse: collapse;
