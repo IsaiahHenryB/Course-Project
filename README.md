@@ -50,3 +50,7 @@ Also fixed some issues with how the footer would show up.
 I was able to use JS to make the ul show up for the navbar.
 
 I added an absolute positioning to the hamburger button to prevent it from shifting when clicked.
+## Homework9
+I was able to add some functionality to the Display more button using JS. unfortunately, I couldn't immediately make use of the event parameter.
+
+I may re-visit or remove the (event) param in the future.
