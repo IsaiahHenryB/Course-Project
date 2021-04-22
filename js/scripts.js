@@ -85,13 +85,14 @@ const addItems = (event) =>{
     newBook.appendChild(bookRating);
     newBook.appendChild(bookDetail);
     // editing each element
-    bookImg.setAttribute('src', item.imgSrc);
-    bookImg.setAttribute('alt', item.imgAlt);
+    bookImg.src = item.imgSrc;
+    bookImg.alt = item.imgAlt;
     bookTitle.textContent = item.title;
     bookAuthor.textContent = item.author;
     bookRating.textContent = item.rating;
     bookDetail.textContent = 'Details';
-    bookDetail.setAttribute('href', item.href)
+    bookDetail.href = item.href;
+    // Adding it to the div
     bookDiv.appendChild(newBook);
     }
     
