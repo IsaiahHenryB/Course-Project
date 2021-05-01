@@ -6,14 +6,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08efa38fac.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/scripts.js" defer></script>
+    <link rel="stylesheet" href="../../../public/css/styles.css">
+    <script src="../../../public/js/scripts.js" defer></script>
 
     <title>CodeSquad Comics-About</title>
 </head>
 <body>
     <div class="header">
-        <img src="img/CodeSquad-Comics-logo.png" alt="CODESQUAD COMICS">
+        <img src="../../../public/img/CodeSquad-Comics-logo.png" alt="CODESQUAD COMICS">
         <div class="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,24 +23,24 @@
         </div>
         <div class="dropdown"><i class="fa fa-bars fa-3x"></i></div>
     </div>
-    <div class="content-box columns">
-    <div class="desc">
-        <h1>ABOUT CODESQUAD COMICS</h1>
-        <p>CodeSquad Comics is a collection of comics read by Isaiah Henry. The site is meant to display comic book covers and information about them. This includes the author, its rating, and other various details about the graphic novel. You can feel free to browse the collection below. If you click on the cover image or the details link of one if the books on the home page, you'll be able to see even more information about it. This includes the  publisher, genre, number of pages, and a brief synopsis. Login is only available to the admin at this time.</p>
-    </div>
+    <div class="content-box">
+    <h1>Login</h1>
 
-    <h2>COLLECTION DETAILS</h2>
+    <div class="form-container">
+        <form method="POST" action="./admin.html">
+        <div>
+            <label for="Email">Email Address </label>
+            <input name="Email" placeholder="Email" type="email">
+        </div>
 
-    <div class="bookdet">
-        <ul>
-            <li>Total Comic Books: 12</li>
-            <li>Latest Additions: 12</li>
-            <li>5 Star Ratings: 5</li>
-            <li>Publishers: 9</li>
-        </ul>
+        <div>
+            <label for="Password">Password </label>
+            <input name="Password" placeholder="Password" type="password">
+        </div>
+        <input type="submit">
+        </form>
     </div>
 </div>
-
     <footer>
         <div>
             <h3>Visit Us</h3>
@@ -66,8 +66,7 @@
         </div>
         <div class="footimg">
             <h3>A Product of</h3>
-            <img src="img/CodeSquad-logo-b.png" alt=""></div>
+            <img src="../../../public/img/CodeSquad-logo-b.png" alt=""></div>
     </footer>
-
 </body>
 </html>

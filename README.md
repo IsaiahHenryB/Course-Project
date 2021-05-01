@@ -1,6 +1,6 @@
 This is a log of my progress starting from Homework7.
 <!-- Homework7 -->
-##homework7
+## homework7
 I added a readme.md file to my repo as Kiki suggested so I literally had to
 ```bash
     $ touch
@@ -54,3 +54,17 @@ I added an absolute positioning to the hamburger button to prevent it from shift
 I was able to add some functionality to the Display more button using JS. unfortunately, I couldn't immediately make use of the event parameter.
 
 I may re-visit or remove the (event) param in the future.
+
+## Homework10
+
+Spent some time reorganizing my file structure and file paths (a lot of time because I didn't have a public folder)
+
+Upon opening up the server I was unable to get any of my links from the public folder to work via localhost
+
+Opening the html files raw is fine, but when I open them in the localhost, none of the files can be located (What i see is ugly straight up html) :/
+
+I'm getting errors in the console that tell me so as well ):
+
+The links in the app.js for sendFile seem to work properly though.
+
+I really hope to get all the file paths working properly but I'm at a total loss for now.
