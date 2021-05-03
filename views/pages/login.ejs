@@ -1,0 +1,21 @@
+<%- include('../partials/head') -%> 
+<%- include('../partials/navbar') -%> 
+    <div class="content-box">
+    <h1>Login</h1>
+
+    <div class="form-container">
+        <form method="POST" action="./admin">
+        <div>
+            <label for="Email">Email Address </label>
+            <input name="Email" placeholder="Email" type="email">
+        </div>
+
+        <div>
+            <label for="Password">Password </label>
+            <input name="Password" placeholder="Password" type="password">
+        </div>
+        <input type="submit">
+        </form>
+    </div>
+</div>
+<%- include('../partials/footer') -%> 
