@@ -9,7 +9,6 @@ const app = express();
 const PORT = 3000;
 
 // Morgan Middleware
-app.use(express.static('/public'));
 app.use(morgan('combined'))
 
 // Adding app.get
