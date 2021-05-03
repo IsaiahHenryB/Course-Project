@@ -68,3 +68,11 @@ I'm getting errors in the console that tell me so as well ):
 The links in the app.js for sendFile seem to work properly though.
 
 I really hope to get all the file paths working properly but I'm at a total loss for now.
+
+## Homework11
+
+I was able to finally get the pages to render properly.
+
+There's one thing though, the book page don't work now :/
+
+I want to mess around and figure out a way to make it function in an experimental branch.
