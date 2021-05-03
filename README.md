@@ -5,7 +5,7 @@ I added a readme.md file to my repo as Kiki suggested so I literally had to
 ```bash
     $ touch
 ```
-up on my terminal navigaion skills.
+up on my terminal navigaion skills. :smirk:
 
 To keep track of each
 
@@ -63,7 +63,7 @@ Upon opening up the server I was unable to get any of my links from the public f
 
 Opening the html files raw is fine, but when I open them in the localhost, none of the files can be located (What i see is ugly straight up html) :/
 
-I'm getting errors in the console that tell me so as well ):
+I'm getting errors in the console that tell me so as well :frowning:
 
 The links in the app.js for sendFile seem to work properly though.
 
@@ -71,8 +71,20 @@ I really hope to get all the file paths working properly but I'm at a total loss
 
 ## Homework11
 
-I was able to finally get the pages to render properly.
+I was able to finally get the pages to render properly. Also I was able to properly add the partials to each page respectively.
 
-There's one thing though, the book page don't work now :/
+There's one thing though, the book page don't work now :confused:
 
 I want to mess around and figure out a way to make it function in an experimental branch.
+
+### HW11exp
+This work is all being done in a branch called Hw11exp which is not a legit branch but more of a sandbox.
+
+I was able to experiment with a few concepts to get the index page to populate from an array.
+
+I was also able to get the book pages to work :smiley:
+
+However I was too lazy to populate all of the necessary information to the array to properly display all the information to the placeholder page.
+I only included the number, name, author, image, and rating of the 1st 3 books in my book array. :confused: (Right now all of the other info defaults to hunter x hunter info.)
+
+This was just a test, but I am quite satisfied with the result. :smiley:
