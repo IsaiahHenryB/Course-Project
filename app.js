@@ -18,58 +18,13 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 // Morgan Middleware
 app.use(morgan('combined'))
+// Using method overrride
+app.use(methodOverride('_method'))
+// using url encoded
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(routes)
 
-// Adding app.get
-
-
-app.get('/book/:id', (request, response) =>{
-    let params = request.params;
-    console.log(params);
-    if (params.id === '01'){
-        response.render('pages/book',{
-            thisbook: book[0]
-        },)
-    }
-    else if (params.id === '02'){
-        response.render('pages/book',{
-            thisbook: book[1]
-        },)
-    }
-    else if (params.id === '03'){
-        response.render('pages/book',{
-            thisbook: book[2]
-        },)
-    }
-    else {
-        response.send(`This product doesn't exist. Try searching again. `);        
-    };
-})
-
-// Create Book array
-
-let book = [
-    {
-        num: '01',
-        name: 'Fun Home: A Family Tragicomic',
-        author: 'by Alison Bechdel',
-        rating: '5 Stars',
-        img: 'img/fun-home.jpg',
-    },
-    {
-        num: '02',
-        name: 'Watchmen',
-        author: 'by Alan Moore',
-        rating: '5 Stars',
-        img: 'img/Watchmen.jpg',
-    },
-    {
-        num: '03',
-        name: 'Hunter X Hunter Vol.1',
-        author: 'by Yoshihiro Tagashi',
-        rating: '5 Stars',
-        img: 'img/hunter-x-hunter.jpg',
-    },
-]
 // Adding app.listen
 app.listen(PORT, ()=>{
     console.log(`You are currently running from port${PORT}`)

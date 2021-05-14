@@ -6,7 +6,7 @@ const adminRouter = require('./admin-routes.js');
 const siteRouter = require('./site-routes.js');
 
 router.use('/', siteRouter);
-router.use('/books', bookRouter);
+router.use('/book', bookRouter);
 router.use('/admin-console', adminRouter);
 
 module.exports = router;

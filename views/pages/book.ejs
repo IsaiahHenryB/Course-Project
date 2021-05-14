@@ -4,22 +4,18 @@
         <div class="holder">
             <div class="card">
                 <div class="image">
-                    <h1><%= thisbook.name %></h1>
-                    <img class="comic" src="../<%= thisbook.img %>" alt="Hunter X Hunter Vol.1">
+                    <h1><%= thisBook.title %></h1>
+                    <img class="comic" src="/img/<%= thisBook.image %>" alt="Hunter X Hunter Vol.1">
                 </div>
 
                 <div class="card-desc">
-                    <p><span class="title">Title:</span> <%= thisbook.name %></p>
-                    <p><span class="title">Author:</span> <%= thisbook.author %></p>
-                    <p><span class="title">Publisher:</span> VIZ Media LLC</p>
-                    <p><span class="title">Genre:</span> Manga</p>
-                    <p><span class="title">Number of pages:</span> 184</p>
-                    <p><span class="title">Rating:</span><%= thisbook.rating %></p>
-                    <p><span class="title">Synopsis:</span>Hunters are a special breed, dedicated to tracking down treasures, magical beasts, and even other people. But such pursuits require a license, and less than one in a hundred thousand can pass the grueling qualification exam. Those who do pass gain access to restricted areas, amazing stores of information, and the right to call themselves Hunters.
-
-                    Gon might be a country boy, but he has high aspirations. Despite his Aunt Mito's protests, Gon decides to follow in his father's footsteps and become a legendary Hunter. The Hunter hopefuls begin their journey by storm-tossed ship, where Gon meets Leorio and Kurapika, the only other applicants who aren't devastated by bouts of seasickness.
-                    
-                    Having survived the terrors of the high seas, Gon and his companions now have to prove their worth in a variety of tests in order to find the elusive Exam Hall. And once they get there, will they ever leave alive...?</p>
+                    <p><span class="title">Title:</span> <%= thisBook.title %></p>
+                    <p><span class="title">Author:</span> <%= thisBook.author %></p>
+                    <p><span class="title">Publisher:</span> <%= thisBook.publisher %></p>
+                    <p><span class="title">Genre:</span> <%= thisBook.genre %></p>
+                    <p><span class="title">Number of pages:</span> <%= thisBook.pages %></p>
+                    <p><span class="title">Rating:</span> <%= thisBook.rating %></p>
+                    <p><span class="title">Synopsis:</span> <%= thisBook.synopsis %></p>
                 </div>
             </div>
         </div>

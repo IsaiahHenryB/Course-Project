@@ -12,17 +12,10 @@
     <h1>COMPLETE COMIC COLLECTION</h1>
     
     <section class="books">
-    <% for (book of books) { %>
-    <div class="book">
-        <a href="/book/<%= book.num %>"><img src="<%= book.img %>" alt="<%= book.name %>" style="width:200px"></a>
-            <em>
-                <p><%= book.name %></p>
-            </em>    
-            <p><%= book.author %></p>
-            <p><%= book.rating %></p>
-            <a href="/book/<%= book.num %>">Details</a>
-    </div>
-    <% } %>
+        <% books.forEach( book => { %>
+            
+        
+        <% }); %>
 
     </section>
     <div class="button" id="clickToAdd"><button>Display More</button></div>
