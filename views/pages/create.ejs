@@ -1,29 +1,28 @@
-<%- include('../partials/head')-%>
-<%- include('../partials/navbar')-%>
-    
+<%- include('../partials/head') -%> 
+<%- include('../partials/navbar') -%> 
     <div class="content-box">
 
-    <h1>ADD A NEW COMIC</h1>
+    <h1>Create New Comic</h1>
 
     <div class="form-container">
-        <form action="update.html">
+        <form action="/book" method="POST">
             <div>
-                <label for="Title">Title: </label>
-                <input name="Title" placeholder="Title" type="text">
+                <label for="title">Title: </label>
+                <input name="title" id="title" placeholder="title" type="text">
             </div>
             <div>
-                <label for="Author:">Author: </label>
-                <input name="Author" placeholder="Author" type="text">
+                <label for="author:">Author: </label>
+                <input name="author" id="author" placeholder="author" type="text" >
             </div>
             <div>
-                <label for="Publisher">Publisher: </label>
-                <select name="Publisher" id="publisher">
-                    <option value="" disabled selected>Select Publisher</option>
+                <label for="publisher">Publisher: </label>
+                <select name="publisher" id="publisher">
+                    <option disabled selected>Select Publisher</option>
                     <option value="BOOM! Box">BOOM! Box</option>
                     <option value="DC Comics">DC Comics</option>
                     <option value="Harry N. Abrahms">Harry N. Abrahms</option>
                     <option value="Icon Book">Icon Book</option>
-                    <option value="Image Comics">Image Comics</option>
+                    <option value="image Comics">image Comics</option>
                     <option value="Marvel">Marvel</option>
                     <option value="Simon & Schuster">Simon & Schuster</option>
                     <option value="Top Shelf Production">Top Shelf Production</option>
@@ -31,17 +30,17 @@
                 </select>
             </div>
             <div>
-                <label for="Genre">Genre: </label>
-                <input name="Genre" placeholder="Genre" type="text">
+                <label for="genre">Genre: </label>
+                <input name="genre" id="genre" placeholder="genre" type="text">
             </div>
             <div>
-                <label for="Number of Pages">Number of Pages: </label>
-                <input name="Number of Pages" placeholder="Number of Pages" type="text">
+                <label for="pages">pages: </label>
+                <input name="pages" placeholder="pages" id="pages" type="text">
             </div>
             <div>
-                <label for="Rating">Rating: </label>
-                <select name="Rating" id="Rating">
-                    <option value="" disabled selected>Select Rating</option>
+                <label for="rating">Rating: </label>
+                <select name="rating" id="rating">
+                    <option value="" disabled selected>Select rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -50,8 +49,12 @@
                 </select>
             </div>
             <div>
-                <label for="Synopsis">Synopsis: </label>
-                <textarea name="Synopsis" placeholder="Synopsys" id="Synopsis" cols="30" rows="10"></textarea>
+                <label for="image">Image: </label>
+                <input name="image" placeholder="image" id="image" type="text">
+            </div>
+            <div>
+                <label for="synopsis">Synopsis: </label>
+                <textarea name="synopsis" placeholder="synopsis" id="synopsis" cols="30" rows="10"></textarea>
             </div>
             <button type="submit">Add Entry</button>
         </form>

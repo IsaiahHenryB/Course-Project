@@ -1,11 +1,15 @@
 // Adding dependencies
 const express = require('express');
 const morgan = require('morgan');
+const methodOverride = require('method-override');
+
 
 // Create app
 const app = express();
 // requiring path
 const path = require('path')
+// Require routes
+const routes = require('./routes/index-routes');
 // Create PORT
 const PORT = 3000;
 // Set view engine tp ejs
@@ -14,30 +18,12 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 // Morgan Middleware
 app.use(morgan('combined'))
-
-// Adding app.get
-app.get('/', (request, response) =>{
-    response.render('pages/index');
-})
-app.get('/about', (request, response) =>{
-    response.render('pages/about');
-})
-app.get('/login', (request, response) =>{
-    response.render('pages/login');
-})
-app.get('/admin-console', (request, response) =>{
-    response.render('pages/admin');
-})
-app.get('/admin-console/create-book', (request, response) =>{
-    response.render('pages/update');
-})
-app.get('/admin-console/create-book/:id', (request, response) =>{
-    response.render('pages/update');
-})
-app.get('/book/:id', (request, response) =>{
-    response.render('pages/book');
-})
-
+// Using method overrride
+app.use(methodOverride('_method'))
+// using url encoded
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(routes)
 
 // Adding app.listen
 app.listen(PORT, ()=>{
