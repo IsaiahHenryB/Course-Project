@@ -7,7 +7,7 @@
     <h1>ADMIN PAGE</h1>
 
     <div class="admintab">
-        <div class="add-button"><a href="./admin-console/create-book"><button>ADD NEW COMIC</button></a></div>
+        <div class="add-button"><a href="/admin-console/create-book"><button>ADD NEW COMIC</button></a></div>
         <table class="book-table">
             
             <thead>
@@ -19,66 +19,20 @@
             </thead>
 
             <tbody>
-            <tr>
-                <td>Batman: The Dark Knight Returns</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Black Panther: A Nation Under Our Feet Book 1</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Fun Home: A Family Tragicomic</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Hunter x Hunter Vol.1</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Lumberjanes</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>March: Book One</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>One Piece Vol 1: Romance Dawn</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Parable of the Sower</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Queer: A Graphic History</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>The Walking Dead Vol 1: Days Gone Bye</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Wake: The Hidden History of Women-Led Slave Revolts</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
-            <tr>
-                <td>Watchmen</td>
-                <td><button>EDIT</button></td>
-                <td><button>DELETE</button></td>
-            </tr>
+                <% books.forEach( book => { %>
+                    <tr>
+                        <td><%= book.title %></td>
+                        <td>
+                        <a href="/admin-console/update-book/<%= book._id %>"><button>EDIT</button></a>
+                        </td>
+                        <td>
+                            <form action="/book/<%= book._id %>?_method=DELETE" method="POST">
+                            <button type="submit">DELETE</button>
+                        </form>
+                    </td>
+                    </tr>
+                <% }); %>
+            
         </tbody>
         </table>
     </div>

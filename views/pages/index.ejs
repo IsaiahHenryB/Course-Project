@@ -14,7 +14,15 @@
     <section class="books">
         <% books.forEach( book => { %>
             
-            <%- include('../partials/single-book') -%> 
+            <div class="book">
+                <a href="/book/<%= book._id %>"><img src="/img/<%= book.image %>" alt="<%= book.title %>" style="width:200px"></a>
+                    <em>
+                        <p><%= book.title %></p>
+                    </em>    
+                    <p>Author: <%= book.author %></p>
+                    <p>Rating: <%= book.rating %></p>
+                    <a href="/book/<%= book._id %>">Details</a>
+            </div>
         
         <% }); %>
 

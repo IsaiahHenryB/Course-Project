@@ -6,7 +6,7 @@ router.route('/')
 .get(adminController.admin)
 router.route('/create-book')
 .get(adminController.createBook)
-router.route('/create-book/:id')
+router.route('/update-book/:id')
 .get(adminController.createdBook)
 
 module.exports = router
