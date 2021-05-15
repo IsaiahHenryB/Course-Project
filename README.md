@@ -102,4 +102,4 @@ Thankfully I was able to make it to the end of this homework although it technic
 
 ### Homework12 (Update)
 
-I was able to finally make the synopsis field function properly :smiley: I am still unfortunately getting book is undefined error every time I switch the hard code with the ejs partial :confused:
+I was able to finally make the synopsis field function properly! :smiley: I am still unfortunately getting book is undefined error every time I switch the hard code with the ejs partial :confused:
