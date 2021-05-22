@@ -11,4 +11,4 @@ router.route('/about')
 router.route('/login')
 .get(siteController.login)
 
-module.exports = router
+module.exports =  router
