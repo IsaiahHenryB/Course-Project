@@ -103,3 +103,12 @@ Thankfully I was able to make it to the end of this homework although it technic
 ### Homework12 (Update)
 
 I was able to finally make the synopsis field function properly! :smiley: I am still unfortunately getting book is undefined error every time I switch the hard code with the ejs partial :confused:
+
+## Homework14 
+
+I adjusted everything to operate with mongoose. (It took me 15 minutes to realize a missing '}' was crashing my nodemon)
+
+I also deleted the data.js file after making a backup.
+I tested out the partials again and still no luck.
+
+But other than that, things went quite swimmingly.

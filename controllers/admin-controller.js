@@ -1,15 +1,31 @@
-const { v4:uuid } = require('uuid');
-const data = require('../data.js');
+const Comic = require('../models/comic-model')
 module.exports = {
     admin: (request, response) =>{
-        response.render('pages/admin',{books:data});
+        Comic.find({},(error, allComics) => {
+            if(error){
+                return error
+            } else {
+                response.render('pages/admin',{ books: allComics })
+            }
+        });
     },
     createBook: (request, response) =>{
-        response.render('pages/create',{books: data});
+        Comic.find({},(error, allComics) => {
+            if(error){
+                return error
+            } else {
+                response.render('pages/create',{ books: allComics })
+            }
+        });
     },
-    createdBook: (request, response) =>{
-        const id = request.params.id;
-        const foundBook = data.find(book => book._id === String(id));
-        response.render('pages/update',{ thisBook: foundBook});
-    }
+    updateBook: (request, response) =>{
+        const { id } = request.params;
+        Comic.findOne({_id: id},(error, foundComic) => {
+            if(error){
+                return error
+            } else {
+                response.render('pages/update',{ thisBook: foundComic })
+            }
+        });
+    },
 }

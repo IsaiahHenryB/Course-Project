@@ -1,10 +1,14 @@
-const { v4:uuid } = require('uuid');
-const data = require('../data.js');
-
+const Comic = require('../models/comic-model')
 module.exports = {
 
 home: (request, response) =>{
-    response.render('pages/index',{ books: data });
+    Comic.find({},(error, allComics) => {
+        if(error){
+            return error
+        } else {
+            response.render('pages/index',{ books: allComics })
+        }
+    });
 },
 about:(request, response) =>{
     response.render('pages/about');

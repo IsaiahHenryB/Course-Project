@@ -2,8 +2,8 @@
 const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
-
-
+const mongoose = require('mongoose')
+require('./config/connection')
 // Create app
 const app = express();
 // requiring path
