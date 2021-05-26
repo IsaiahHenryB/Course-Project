@@ -1,4 +1,5 @@
 // Adding dependencies
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
@@ -11,7 +12,7 @@ const path = require('path')
 // Require routes
 const routes = require('./routes/index-routes');
 // Create PORT
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 // Set view engine tp ejs
 app.set('view engine', 'ejs');
 // Securing proper file paths;

@@ -112,3 +112,11 @@ I also deleted the data.js file after making a backup.
 I tested out the partials again and still no luck.
 
 But other than that, things went quite swimmingly.
+
+## Homework15
+
+I Got the whole thing online! Yay!!
+
+I was able to successfully export my data to Mongodb Atlas and connect it to my app.
+
+I uploaded this to github to check if it works with heroku
