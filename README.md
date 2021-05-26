@@ -120,3 +120,5 @@ I Got the whole thing online! Yay!!
 I was able to successfully export my data to Mongodb Atlas and connect it to my app.
 
 I uploaded this to github to check if it works with heroku.
+
+Fixed the link in my login page to navigate to admin-console. I realized it wasn't properly linked after deployment.
