@@ -119,4 +119,4 @@ I Got the whole thing online! Yay!!
 
 I was able to successfully export my data to Mongodb Atlas and connect it to my app.
 
-I uploaded this to github to check if it works with heroku
+I uploaded this to github to check if it works with heroku.
