@@ -1,12 +1,14 @@
 const Comic = require('../models/comic-model')
 module.exports = {
     books: (request, response) => {
+        const comicId = request.params.id
         Comic.findOne({_id: comicId},(error, foundComic) => {
             if(error){
                 return error
             } else {
                 response.render('pages/book',{ thisBook: foundComic })
             }
+            console.log(foundComic.title)
         });
 ;
     },
