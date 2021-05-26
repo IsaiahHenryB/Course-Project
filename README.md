@@ -125,4 +125,4 @@ Fixed the link in my login page to navigate to admin-console. I realized it wasn
 
 I realized as well that there was an issue with my code in my book controller i didn't define comicId as request.params.id in the previous HW. Also the synopsis object is beginning to give me issues again (returning undefined even though it has a specified value.)
 
-I'll have to figure this out later :confusing:
+I'll have to figure this out later :confused:
