@@ -126,3 +126,7 @@ Fixed the link in my login page to navigate to admin-console. I realized it wasn
 I realized as well that there was an issue with my code in my book controller i didn't define comicId as request.params.id in the previous HW. Also the synopsis object is beginning to give me issues again (returning undefined even though it has a specified value.)
 
 I'll have to figure this out later :confused:
+
+##Homework 16
+
+I was able to add basic user authentification to my site. I realized that I could access my admin page with the wrong password, but I noticed it was because I was missing {} after one of the if statements concerning the password validation.
