@@ -48,7 +48,7 @@ register_post:(request, response) => {
         password: hash
       });
     newUser.save();
-    response.redirect('/admin-console');
+    response.redirect('/login');
   });
   },
 }
