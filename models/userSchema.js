@@ -36,7 +36,7 @@ passport.deserializeUser(function(id, done){
 passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
   clientSecret:process.env.CLIENT_SECRET,
-  callbackURL: "https://localhost:3000/auth/google/comics"
+  callbackURL: "https://codesquad-has-comics.herokuapp.com/auth/google/comics"
 },
 function(accessToken, refreshToken, email, cb) {
   User.findOrCreate({ googleId: email.id , username: email.displayName}, function (err, user) {
