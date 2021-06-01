@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
+const {Schema} = mongoose;
 const passport = require('passport');
 const passportLocalMongoose = require('passport-local-mongoose');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 
-const {Schema} = mongoose;
+
 
 const userSchema = new Schema({
   username: {
@@ -12,20 +13,20 @@ const userSchema = new Schema({
   },
   password: {
     type: String,
-    minlength:[10, "You need at least 10 characters in your password"]
   },
   googleId: {
-    type: String
+    type: String,
   }
 });
 userSchema.plugin(passportLocalMongoose);
+userSchema.plugin(findOrCreate);
 
 const User = mongoose.model('User', userSchema);
 
 passport.use(User.createStrategy());
 
 passport.serializeUser(function(user, done) {
-  done(err, user)
+  done(null, user.id)
 });
 passport.deserializeUser(function(id, done){
   User.findById(id, function(err, user) {
@@ -35,11 +36,11 @@ passport.deserializeUser(function(id, done){
 
 passport.use(new GoogleStrategy({
   clientID: process.env.CLIENT_ID,
-  clientSecret:process.env.CLIENT_SECRET,
-  callbackURL: "https://codesquad-has-comics.herokuapp.com/auth/google/comics"
+  clientSecret: process.env.CLIENT_SECRET,
+  callbackURL: process.env.CALLBACK_URL,
 },
 function(accessToken, refreshToken, email, cb) {
-  User.findOrCreate({ googleId: email.id , username: email.displayName}, function (err, user) {
+  User.findOrCreate({ googleId: email.id, username: email.displayName}, function (err, user) {
     return cb(err, user);
   });
 }

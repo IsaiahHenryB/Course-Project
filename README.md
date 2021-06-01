@@ -135,4 +135,10 @@ I was able to add basic user authentication to my site. I realized that I could 
 
 This time, I spent the majority of my time trying to find out why the synopsis objects weren't functioning properly. I got synopsis to work. I realized that it was not defined in the book schema. Thank goodness!
 
-This Homework was quite a long one for me so far. I am trying to deploy this via heroku now.
+This homework was quite a long one for me so far. I am trying to deploy this via heroku now.
+
+After attempting to deploy from heroku, the headaches began. I spent more time than i would like to admit to get the google authentication to function properly and boy am I glad to have that out of the way.
+
+I couldn't find a userProfileURL as was mentioned in step 3 of this assignment, so I left that alone for now.(until further clarification)
+
+### This is my second round of heroku troubleshooting 
