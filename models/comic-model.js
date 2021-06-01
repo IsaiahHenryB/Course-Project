@@ -21,6 +21,10 @@ const comicSchema =new Schema({
         type: String,
         minLength: [ 1, 'You need at least 1 character']
     },
+    synopsis: {
+        type: String,
+        minLength: [ 1, 'You need at least 1 character']
+    },
     pages: {
         type: Number,
         min: [ 1, 'A book need at least 1 page.']

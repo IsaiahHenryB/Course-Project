@@ -4,6 +4,9 @@ const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
 const mongoose = require('mongoose')
+const session = require('express-session');
+const passport = require('passport');
+
 require('./config/connection')
 // Create app
 const app = express();
@@ -24,6 +27,16 @@ app.use(methodOverride('_method'))
 // using url encoded
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(session({
+    secret: process.env.SECRET_KEY,
+    resave: false,
+    saveUninitialized: false,
+}));
+
+app.use(passport.initialize())
+app.use(passport.session())
+
 app.use(routes)
 
 // Adding app.listen

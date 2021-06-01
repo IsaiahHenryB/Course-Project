@@ -6,15 +6,15 @@ module.exports = {
             if(error){
                 return error
             } else {
-                response.render('pages/book',{ thisBook: foundComic })
+                response.render('pages/book', { thisBook: foundComic, user: request.user})
             }
-            console.log(foundComic.title)
+            console.log(foundComic.synopsis)
         });
 ;
     },
     booksCreate: (request, response) =>{
         const title = request.body.title;
-        if (title != "") {
+        if (request.isAuthenticated()) {
             const newComic = new Comic({
                 title : request.body.title,
                 author : request.body.author,
@@ -24,9 +24,11 @@ module.exports = {
                 rating : request.body.rating,
                 synopsis : request.body.synopsis,
                 image : request.body.image,
-            })
+            });
             newComic.save();
             response.redirect("/admin-console"); 
+        } else {
+            response.redirect('/')
         }
     },
     booksUpdate: (request, response) =>{

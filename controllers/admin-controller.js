@@ -5,7 +5,7 @@ module.exports = {
             if(error){
                 return error
             } else {
-                response.render('pages/admin',{ books: allComics })
+                response.render('pages/admin',{ books: allComics, user: request.user })
             }
         });
     },
@@ -14,7 +14,7 @@ module.exports = {
             if(error){
                 return error
             } else {
-                response.render('pages/create',{ books: allComics })
+                response.render('pages/create',{ books: allComics, user: request.user })
             }
         });
     },
@@ -24,7 +24,7 @@ module.exports = {
             if(error){
                 return error
             } else {
-                response.render('pages/update',{ thisBook: foundComic })
+                response.render('pages/update',{ thisBook: foundComic, user: request.user })
             }
         });
     },

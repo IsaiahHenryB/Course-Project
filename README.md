@@ -127,6 +127,12 @@ I realized as well that there was an issue with my code in my book controller i 
 
 I'll have to figure this out later :confused:
 
-##Homework 16
+## Homework 16
 
-I was able to add basic user authentification to my site. I realized that I could access my admin page with the wrong password, but I noticed it was because I was missing {} after one of the if statements concerning the password validation.
+I was able to add basic user authentication to my site. I realized that I could access my admin page with the wrong password, but I noticed it was because I was missing {} after one of the if statements concerning the password validation.
+
+## Homework 17
+
+This time, I spent the majority of my time trying to find out why the synopsis objects weren't functioning properly. I got synopsis to work. I realized that it was not defined in the book schema. Thank goodness!
+
+This Homework was quite a long one for me so far. I am trying to deploy this via heroku now.
