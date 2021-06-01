@@ -144,3 +144,5 @@ I couldn't find a userProfileURL as was mentioned in step 3 of this assignment, 
 ### This is my second round of heroku troubleshooting 
 
 After all my troubleshooting was done, I am pleased to say that my app is working correctly :joy: I'm so relieved to be "finished" with this assignment! (I might be counting my chickens right now.)
+
+*I forgot to mention that I edited the navbar and footer to switch the link from login to logout depending on whether a user is signed in or not*
