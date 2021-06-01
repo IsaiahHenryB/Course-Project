@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const passport = require('passport');
-const findOrCreate = require('mongoose-findorcreate')
 const passportLocalMongoose = require('passport-local-mongoose');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
+const findOrCreate = require('mongoose-findorcreate');
 
 const {Schema} = mongoose;
 
@@ -28,7 +28,7 @@ passport.serializeUser(function(user, done) {
   done(err, user)
 });
 passport.deserializeUser(function(id, done){
-  User.findById(id, function(err,user){
+  User.findById(id, function(err, user) {
     done(err, user)
   })
 });
