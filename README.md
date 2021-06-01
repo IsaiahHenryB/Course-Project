@@ -142,3 +142,5 @@ After attempting to deploy from heroku, the headaches began. I spent more time t
 I couldn't find a userProfileURL as was mentioned in step 3 of this assignment, so I left that alone for now.(until further clarification)
 
 ### This is my second round of heroku troubleshooting 
+
+After all my troubleshooting was done, I am pleased to say that my app is working correctly :joy: I'm so relieved to be "finished" with this assignment! (I might be counting my chickens right now.)
